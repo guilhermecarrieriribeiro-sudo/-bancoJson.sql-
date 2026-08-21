@@ -1,0 +1,5 @@
+SELECT nome, JSON_EXTRACT(atributos, '$.cor') AS cor_produto 
+FROM produtos;
+
+SELECT nome FROM produtos
+WHERE JSON_CONTAINS(atributos, '"5G"', '$.conexoes');
