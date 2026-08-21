@@ -1,0 +1,9 @@
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    atributos JSON
+);
+
+INSERT INTO produtos (nome, atributos) VALUES
+('Celular X', '{"cor": "preto", "memoria": "128GB", "conexoes": ["5G", "Wi-Fi"]}'),
+('Relogio Y', '{"cor": "prata", "sensores": ["cardiaco", "passos"]}');
